@@ -32,3 +32,9 @@ body {
   background-color: var(--bg-color);
   position: fixed;
 }
+
+.navbar a {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
