@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
@@ -11,6 +12,7 @@
 :root {
   --bg-color: #111827;
   --text-color: #ededed;
+  --primary-color: #00abf0;
 }
 
 html {
@@ -24,12 +26,116 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--bg-color);
-    position: fixed;
-    z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
 }
 
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar .nav a {
+  color: var(--text-color);
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.navbar .nav a:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-image: url(images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.hero .content {
+  max-width: 48rem;
+  padding: 1.4rem 5%;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+.hero .content h1 span {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #00abf0;
+  }
+}
+
+.hero .content .typing{
+  position: relative;
+  width: 32.8rem;
+}
+
+.hero .content .typing h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.7px var(--primary-color);
+}
+
+.hero .content p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.hero .content .btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: #000;
+  border: 2px solid transparent;
+  text-decoration: none;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.hero .content .btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  border: 2px solid #00abf0;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.hero .content .btn:hover::before {
+  opacity: 1;
+  box-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0;
+}
