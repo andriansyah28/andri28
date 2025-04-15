@@ -620,24 +620,6 @@ footer {
   .hamburger {
     display: flex;
   }
-  .hero {
-    height: 100vh;
-    padding: 2rem 1rem;
-  }
-
-  .content h1 {
-    font-size: 2rem;
-  }
-
-  .content p {
-    font-size: 1rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-
 
   .about-container {
     flex-direction: column;
