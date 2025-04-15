@@ -616,7 +616,7 @@ footer {
 
   .content p {
     font-size: 1rem;
-    margin: 1rem auto;
+    margin: auto 1rem auto 2rem;
   }
 
   .btn {
