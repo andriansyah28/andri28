@@ -16,4 +16,36 @@ document.addEventListener("DOMContentLoaded", function () {
       alert('Silakan izinkan pop-up di browser Anda.');
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const texts = ["Frontend Developer", "UI Designer", "Web Enthusiast"];
+    const typewriter = document.querySelector(".typewriter");
+  
+    let i = 0; 
+    let j = 0; 
+    let isDeleting = false;
+  
+    function type() {
+      const current = texts[i];
+      const partial = current.substring(0, j);
+      typewriter.textContent = partial;
+  
+      if (!isDeleting && j < current.length) {
+        j++;
+        setTimeout(type, 100); 
+      } else if (isDeleting && j > 0) {
+        j--;
+        setTimeout(type, 50); 
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          i = (i + 1) % texts.length; 
+        }
+        setTimeout(type, 1500); 
+      }
+    }
+  
+    type();
+  });
+  
   

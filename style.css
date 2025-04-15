@@ -108,46 +108,18 @@ body {
   100% { color: var(--primary-color); }
 }
 
-.typing h3 {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  -webkit-text-stroke: 1px var(--primary-color);
-  color: transparent;
-}
-
-.typewriter-wrapper {
+.typing {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
-.typewriter::after {
-  content: "Frontend Developer";
+.typewriter {
   border-right: 2px solid var(--primary-color);
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
-  width: 0ch;
-  animation:
-    typing 2s steps(20) infinite,
-    blink 0.7s step-end infinite,
-    switchText 6s steps(1, end) infinite;
-}
-
-/* Animasi mengetik */
-@keyframes typing {
-  0% {
-    width: 0ch;
-  }
-  30% {
-    width: 20ch;
-  }
-  60% {
-    width: 20ch;
-  }
-  100% {
-    width: 0ch;
-  }
+  animation: blink 0.7s step-end infinite;
 }
 
 @keyframes blink {
@@ -155,23 +127,6 @@ body {
     border-color: transparent;
   }
 }
-
-@keyframes switchText {
-  0% {
-    content: "Frontend Developer";
-  }
-  33% {
-    content: "UI Designer";
-  }
-  66% {
-    content: "Web Enthusiast";
-  }
-  100% {
-    content: "Frontend Developer";
-  }
-}
-
-
 
 .content p {
   font-size: 1.1rem;
