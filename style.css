@@ -115,27 +115,38 @@ body {
   color: transparent;
 }
 
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid var(--primary-color);
+.typewriter-wrapper {
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--primary-color);
-  width: 0ch;
-  animation: typing 4s steps(17, end) infinite,
-             blink 0.7s step-end infinite;
 }
 
-/* Ketik teks */
+.typewriter::after {
+  content: "Frontend Developer";
+  border-right: 2px solid var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0ch;
+  animation:
+    typing 2s steps(20) infinite,
+    blink 0.7s step-end infinite,
+    switchText 6s steps(1, end) infinite;
+}
+
+/* Animasi mengetik */
 @keyframes typing {
   0% {
     width: 0ch;
   }
+  30% {
+    width: 20ch;
+  }
   60% {
-    width: 17ch; 
+    width: 20ch;
   }
   100% {
-    width: 0ch; 
+    width: 0ch;
   }
 }
 
@@ -144,6 +155,22 @@ body {
     border-color: transparent;
   }
 }
+
+@keyframes switchText {
+  0% {
+    content: "Frontend Developer";
+  }
+  33% {
+    content: "UI Designer";
+  }
+  66% {
+    content: "Web Enthusiast";
+  }
+  100% {
+    content: "Frontend Developer";
+  }
+}
+
 
 
 .content p {
