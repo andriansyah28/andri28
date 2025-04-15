@@ -229,6 +229,8 @@ section ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .hero-video {
@@ -239,7 +241,8 @@ section ul li {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.6); 
+  filter: brightness(0.6);
+  pointer-events: none;
 }
 
 .content {
@@ -247,7 +250,10 @@ section ul li {
   z-index: 2;
   text-align: center;
   color: #fff;
+  max-width: 800px;
+  padding: 1rem;
 }
+
 
 
 /* About Section */
@@ -614,6 +620,24 @@ footer {
   .hamburger {
     display: flex;
   }
+  .hero {
+    height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
 
   .about-container {
     flex-direction: column;
