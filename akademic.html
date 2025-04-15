@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akademic - Andriansyah</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .btn-primary {
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      background-color: #2563eb;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #1e40af;
+      box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-success {
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      background-color: #16a34a;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-success:hover {
+      background-color: #15803d;
+      box-shadow: 0 0 10px rgba(22, 163, 74, 0.5);
+    }
+
+    .file-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -21,16 +61,16 @@
   </nav>
 
   <section class="akademic">
-    <div class="file-actions" style="display: flex; gap: 1rem; align-items: center; padding: 1rem;">
+    <div class="file-actions">
       <button 
         onclick="openPdf('UTS SISTEM MULTIMEDIA ANDRIANSYAH.pdf')" 
-        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        class="btn-primary">
         📄 Open
       </button>
       <a 
         href="UTS SISTEM MULTIMEDIA ANDRIANSYAH.pdf" 
         download 
-        class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
+        class="btn-success">
         ⬇️ Download
       </a>
     </div>
