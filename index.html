@@ -8,19 +8,21 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html" class="logo">Andri <span>Study</span></a>
+      <a href="#" class="logo">Andri <span>Study</span></a>
       <div class="hamburger" id="hamburger">
-      
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <div class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="akademic.html">Akademic</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#akademic">Akademic</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
       <main class="content">
         <h1>Hi, I'm <span>Andriansyah</span></h1>
         <div class="typing">
@@ -30,9 +32,38 @@
           Saya Andriansyah, seorang Frontend Developer yang berfokus pada
           membangun antarmuka web yang responsif, interaktif, dan user-friendly.
         </p>
-        <a href="contact.html" class="btn">Contact</a>
+        <a href="#contact" class="btn">Contact</a>
       </main>
     </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah mahasiswa yang memiliki passion dalam dunia pengembangan web, khususnya di bidang frontend. Saya senang belajar hal baru dan suka membuat antarmuka pengguna yang menarik.</p>
+    </section>
+
+    <!-- Akademic Section -->
+    <section class="akademic" id="akademic">
+      <h2>Riwayat Akademik</h2>
+      <ul>
+        <li>🔹 SMA Negeri 1 Contoh - 2020</li>
+        <li>🔹 Universitas Contoh - Teknik Informatika - 2021 - sekarang</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Hubungi Saya</h2>
+      <p>Email: andri@example.com</p>
+      <p>Instagram: @andri.dev</p>
+      <p>
+        <button class="btn" onclick="openPdf('CV_Andriansyah.pdf')">Lihat CV</button>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Andriansyah. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
