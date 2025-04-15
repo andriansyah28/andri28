@@ -1,0 +1,42 @@
+<!-- akademic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akademic - Andriansyah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">Andri <span>Study</span></a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="akademic.html">Akademic</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="akademic">
+    <div class="file-actions" style="display: flex; gap: 1rem; align-items: center; padding: 1rem;">
+      <button 
+        onclick="openPdf('UTS SISTEM MULTIMEDIA ANDRIANSYAH.pdf')" 
+        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+        📄 Open
+      </button>
+      <a 
+        href="UTS SISTEM MULTIMEDIA ANDRIANSYAH.pdf" 
+        download 
+        class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
+        ⬇️ Download
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

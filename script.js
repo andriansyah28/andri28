@@ -1,5 +1,8 @@
-// script.js
-document.getElementById("hamburger").addEventListener("click", function() {
-    const nav = document.getElementById("nav");
-    nav.classList.toggle("active");
-});
+document.getElementById('hamburger').addEventListener('click', function () {
+    document.getElementById('nav').classList.toggle('active');
+  });
+  
+  function openPdf(fileName) {
+    window.open(fileName, '_blank');
+  }
+  
