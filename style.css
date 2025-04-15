@@ -108,19 +108,43 @@ body {
   100% { color: var(--primary-color); }
 }
 
-.typing {
-  font-size: 2.5rem; 
-  font-weight: 700;
-  color: var(--primary-color);
-  display: inline-block;
-}
-
 .typewriter {
-  border-right: 3px solid var(--primary-color); 
+  border-right: 3px solid var(--primary-color);
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   animation: blink 0.7s step-end infinite, color-change 4s linear infinite; 
+  height: 50px; 
+}
+
+.typing {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: inline-block;
+  width: auto;
+  height: 50px; 
+  line-height: 50px;
+  vertical-align: middle;
+}
+.typing-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  height: 50px; 
+  line-height: 50px; 
+  vertical-align: middle; 
+}
+
+
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
@@ -129,29 +153,13 @@ body {
   }
 }
 
-@keyframes color-change {
-  0% {
-    color: var(--primary-color); 
-  }
-  33% {
-    color: var(--primary-color); 
-  }
-  66% {
-    color: var(--primary-color); 
-  }
-  100% {
-    color: var(--primary-color); 
-  }
-}
-
-
 .content p {
   font-size: 1.1rem;
   margin-top: 1rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -166,7 +174,6 @@ body {
   transition: all 0.4s;
   position: relative;
 }
-
 
 .btn:hover {
   background-color: var(--primary-color);
@@ -186,7 +193,8 @@ section h2 {
   color: var(--primary-color);
 }
 
-section p, section ul {
+section p,
+section ul {
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto;
