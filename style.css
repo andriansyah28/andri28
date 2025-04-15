@@ -109,17 +109,18 @@ body {
 }
 
 .typing {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Ukuran font lebih besar */
   font-weight: 700;
   color: var(--primary-color);
+  display: inline-block;
 }
 
 .typewriter {
-  border-right: 2px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color); /* Kursor lebih tebal */
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  animation: blink 0.7s step-end infinite;
+  animation: blink 0.7s step-end infinite, color-change 4s linear infinite; /* Animasi blinking + perubahan warna */
 }
 
 @keyframes blink {
@@ -127,6 +128,22 @@ body {
     border-color: transparent;
   }
 }
+
+@keyframes color-change {
+  0% {
+    color: var(--primary-color); 
+  }
+  33% {
+    color: var(--primary-color); 
+  }
+  66% {
+    color: var(--primary-color); 
+  }
+  100% {
+    color: var(--primary-color); 
+  }
+}
+
 
 .content p {
   font-size: 1.1rem;
