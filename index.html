@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andriansyah</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -22,6 +23,7 @@
       </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
       <main class="content">
         <h1>Hi, I'm <span>Andriansyah</span></h1>
@@ -36,27 +38,100 @@
       </main>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="about">
-      <h2>Tentang Saya</h2>
-      <p>Saya adalah mahasiswa yang memiliki passion dalam dunia pengembangan web, khususnya di bidang frontend. Saya senang belajar hal baru dan suka membuat antarmuka pengguna yang menarik.</p>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="images/profile.png" alt="Foto Andriansyah" />
+        </div>
+        <div class="about-content">
+          <h2>Tentang Saya</h2>
+          <p>
+            Halo! Saya <strong>Andriansyah</strong>, seorang <span class="highlight">Frontend Developer</span> yang memiliki semangat besar dalam menciptakan antarmuka web yang bersih, responsif, dan user-friendly.
+          </p>
+          <p>
+            Saya memiliki ketertarikan mendalam terhadap pengembangan web modern. Saya terus belajar teknologi baru seperti <span class="highlight">Html</span>, <span class="highlight">Tailwind CSS</span>, dan <span class="highlight">JavaScript</span> agar bisa membangun website yang tidak hanya fungsional tapi juga menarik secara visual.
+          </p>
+          <p>
+            Dalam waktu luang, saya suka membaca dokumentasi teknologi, eksplorasi desain UI/UX, dan mengerjakan proyek pribadi untuk mengasah kemampuan saya.
+          </p>
+        </div>
+      </div>
     </section>
+    
+    
 
+    <!-- Akademic Section -->
     <section class="akademic" id="akademic">
-      <h2>Riwayat Akademik</h2>
-      <ul>
-        <li>🔹 SMA Negeri 1 Contoh - 2020</li>
-        <li>🔹 Universitas Contoh - Teknik Informatika - 2021 - sekarang</li>
-      </ul>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>Hubungi Saya</h2>
-      <p>Email: andri@example.com</p>
-      <p>Instagram: @andri.dev</p>
-      <p>
-        <button class="btn" onclick="openPdf('CV_Andriansyah.pdf')">Lihat CV</button>
+      <h2>Akademik</h2>
+      <p class="section-subtitle">
+        Berikut adalah salah satu hasil tugas akademik saya yang menunjukkan kemampuan dalam bidang Sistem Multimedia.
       </p>
+    
+      <div class="card-akademik">
+        <img src="images/multimedia.png" alt="Preview Tugas" class="card-image">
+        
+        <div class="card-content">
+          <h3>Tugas UTS Sistem Multimedia</h3>
+          <p>
+            Tugas ini dibuat sebagai bagian dari mata kuliah Sistem Multimedia. Di dalamnya saya membahas teknik kompresi audio dan video, serta implementasi dasar pengolahan media menggunakan software multimedia.
+          </p>
+    
+          <div class="card-buttons">
+            <a href="Tugas/UTS SISTEM MULTIMEDIA ANDRIANSYAH.pdf" class="btn" download>Unduh PDF</a>
+            <a href="Tugas/UTS SISTEM MULTIMEDIA ANDRIANSYAH.pdf" class="btn" target="_blank">Buka PDF</a>
+          </div>
+        </div>
+      </div>
     </section>
+    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Hubungi Saya</h2>
+          <p>Jika Anda tertarik untuk bekerja sama, berdiskusi proyek, atau hanya ingin menyapa, silakan hubungi saya melalui kontak di bawah ini:</p>
+    
+          <P><button class="btn" onclick="openPdf('CV_Andriansyah.pdf')">Lihat CV</button></P>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>Email:</span> andri@example.com
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>Telepon:</span> +62 812-3456-7890
+          </div>
+          <div class="info-item">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram:</span> @andri.dev
+          </div>
+    
+          
+
+          <div class="social-icons">
+            <a href="https://github.com/andriansyah" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/andriansyah" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/andri.dev" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:andri@example.com"><i class="fas fa-envelope"></i></a>
+          </div>
+
+        </div>
+    
+        <div class="contact-form">
+          <h3>Kirim Pesan</h3>
+          <form>
+            <input type="text" placeholder="Nama Lengkap" required />
+            <input type="email" placeholder="Email Aktif" required />
+            <textarea rows="5" placeholder="Pesan Anda..." required></textarea>
+            <button type="submit" class="btn">Kirim</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+    
 
     <footer>
       <p>&copy; 2025 Andriansyah. All rights reserved.</p>
