@@ -139,10 +139,11 @@ body {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem; 
 }
 
 .btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: white;
@@ -153,6 +154,7 @@ body {
   transition: all 0.4s;
   position: relative;
 }
+
 
 .btn:hover {
   background-color: var(--primary-color);
