@@ -638,7 +638,7 @@ section ul li {
 .animation-section h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: var(--primary-color);
+  color: #222;
 }
 
 .animation-cards {
