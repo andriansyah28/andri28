@@ -429,7 +429,7 @@ section ul li {
 
 .akademic-font {
   padding: 4rem 1rem;
-  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  background: var(--bg-color);
   text-align: center;
 }
 
