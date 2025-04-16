@@ -429,49 +429,62 @@ section ul li {
 
 .akademic-font {
   padding: 4rem 1rem;
-  background-color: #f9f9f9;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
   text-align: center;
 }
 
 .akademic-font h2 {
   font-size: 2.5rem;
+  color: #222;
   margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  color: #555;
-  font-size: 1rem;
+  color: #444;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .font-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .font-card {
   background: white;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   padding: 1.5rem;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
 }
 
 .font-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .font-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
 }
 
 .font-card p {
   font-size: 1.1rem;
+  color: #111;
+  background-color: #f9f9f9;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
 }
+
 
 
 /* Card Style */
