@@ -537,13 +537,13 @@ section ul li {
 }
 
 /* Section Title */
-#akademik-video .section-title {
+#akademik-video .section-title-akademik {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--primary-color);
 }
 
 /* Video Card Container */
