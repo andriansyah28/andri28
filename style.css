@@ -435,12 +435,12 @@ section ul li {
 
 .akademic-font h2 {
   font-size: 2.5rem;
-  color: white;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  color: #444;
+  color: var(--text-color);
   font-size: 1.1rem;
   margin-bottom: 2rem;
   max-width: 700px;
@@ -484,6 +484,104 @@ section ul li {
   border-radius: 8px;
   border: 1px dashed #ccc;
 }
+
+.image-gallery {
+  padding: 4rem 1rem;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+.image-gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-6px);
+}
+
+.image-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.image-card p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Card Container */
+.audio-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Individual Card */
+.audio-card {
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Format title */
+.audio-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Audio player */
+.audio-card audio {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+}
+
 
 
 
