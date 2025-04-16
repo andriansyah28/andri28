@@ -427,6 +427,53 @@ section ul li {
   box-shadow: 0 4px 20px var(--accent-color);
 }
 
+.akademic-font {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.akademic-font h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.font-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.font-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.font-card:hover {
+  transform: translateY(-5px);
+}
+
+.font-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.font-card p {
+  font-size: 1.1rem;
+}
+
+
 /* Card Style */
 .card {
   background-color: #1e293b;
