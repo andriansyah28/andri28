@@ -906,6 +906,37 @@ footer {
     max-width: 100%;
   }
 
+  .animation-section {
+    padding: 30px 15px;
+  }
+
+  .animation-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .animation-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card video {
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 480px) {
