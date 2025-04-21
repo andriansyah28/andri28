@@ -873,7 +873,7 @@ footer {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 0;
+    left: 1rem;
     right: 0;
     background-color: var(--secondary-color);
     display: none;
