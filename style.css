@@ -873,11 +873,11 @@ footer {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 1rem;
+    left: 0;
     right: 0;
     background-color: var(--secondary-color);
     display: none;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
   }
 
   .navbar .nav.active {
