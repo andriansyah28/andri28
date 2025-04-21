@@ -88,7 +88,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #333;
+  background-color: var(--bg-color);
   min-width: 200px;
   z-index: 1000;
   list-style: none;
@@ -106,7 +106,7 @@ body {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #444;
+  background-color: var(--secondary-color);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -565,15 +565,15 @@ section ul li {
 }
 
 .image-card {
-  background: white;
+  background: var(--secondary-color);
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   padding: 1rem;
   transition: transform 0.3s ease;
 }
 
 .image-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-15px);
+  box-shadow: 0 12px 24px var(--accent-color);
 }
 
 .image-card img {
@@ -583,10 +583,10 @@ section ul li {
   object-fit: cover;
 }
 
-.image-card p {
+.image-card h3 {
   margin-top: 0.8rem;
   font-weight: 600;
-  color: #333;
+  color: var(--primary-color);
 }
 
 /* Section Title */
@@ -609,7 +609,7 @@ section ul li {
 
 /* Video Card Style */
 .video-card {
-  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  background: var(--secondary-color);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -619,13 +619,13 @@ section ul li {
 
 .video-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px var(--accent-color);
 }
 
 .video-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .video-card video {
@@ -683,7 +683,8 @@ section ul li {
 }
 
 .animation-section {
-  padding: 50px;
+  padding: 1rem;
+  margin: 1rem 3rem;
   background-color: var(--bg-color);
   text-align: center;
 }
@@ -697,37 +698,15 @@ section ul li {
 .animation-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  gap: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card video {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
-}
-
-.card h3 {
-  font-size: 1.25rem;
-  color: #0077cc;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
 }
 
 
