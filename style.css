@@ -888,12 +888,6 @@ footer {
     padding: 2rem 1rem;
   }
 
-  .hero-video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
   .content h1 {
     display: block;
     font-size: 2rem;
