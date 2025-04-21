@@ -502,14 +502,14 @@ section ul li {
 }
 
 .font-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-15px);
+  box-shadow: 0 12px 24px var(--primary-color);
 }
 
 .font-card h3 {
   font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  color: #333;
+  margin-top: 0.8rem;
+  color: var(--primary-color);
 }
 
 .font-card p {
@@ -594,7 +594,7 @@ section ul li {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   color: var(--primary-color);
 }
@@ -684,14 +684,14 @@ section ul li {
 
 .animation-section {
   padding: 50px;
-  background-color: #f0f4f8;
+  background-color: var(--bg-color);
   text-align: center;
 }
 
 .animation-section h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #222;
+  color: var(--primary-color);
 }
 
 .animation-cards {
