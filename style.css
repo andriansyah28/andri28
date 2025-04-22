@@ -897,6 +897,7 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
+    justify-content: center;
   }
   .content h1 {
     display: block;
