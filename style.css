@@ -891,10 +891,12 @@ footer {
   .font-card-container {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-top: 2rem;
   }
 
+  .image-card {
+    max-width: 100%;
+    height: auto;
+  }
   .content h1 {
     display: block;
     font-size: 2rem;
