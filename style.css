@@ -896,6 +896,7 @@ footer {
   .image-card{
     max-width: 300px;
     height: auto;
+    align-items: center;
   }
 
   .image-card img{
