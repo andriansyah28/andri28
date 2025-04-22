@@ -893,11 +893,6 @@ footer {
     height: auto;
   }
 
-  .image-card {
-    max-width: 100%;
-    height: auto;
-  }
-
   .image-card img{
     width: 100%;
     max-width: 600px;
