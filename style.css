@@ -894,9 +894,8 @@ footer {
   }
 
   .image-card {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
-    align-content: center;
   }
   .content h1 {
     display: block;
