@@ -559,8 +559,6 @@ section ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .image-card {
@@ -893,6 +891,11 @@ footer {
     height: auto;
   }
 
+  .image-grid {
+    grid-template-columns: 1fr; 
+    justify-items: center;
+  }
+
   .image-card{
     max-width: 300px;
     height: auto;
@@ -902,14 +905,6 @@ footer {
     width: 100%;
     height: auto;
     display: block;
-  }
-
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto;
   }
 
   .content h1 {
